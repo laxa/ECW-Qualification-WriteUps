@@ -1,0 +1,1 @@
+Using volatility, I find the adk.exe process, then I dump it and reverse it, using string references, I can find the encryption method with the string %s.bak. Since the encryption is just a xor, I take the function and modify it so it'll compile, I then find the encryption key stored in the registry and uncipher the file containing the flag

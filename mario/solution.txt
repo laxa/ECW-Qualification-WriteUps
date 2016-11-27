@@ -1,0 +1,1 @@
+In this challenge I get an audio file, using binwalk I can find an image embedded at the end of the file. But there is another part of the flag which is hidden in the LSB. I can extract it using: https://github.com/ragibson/Steganography

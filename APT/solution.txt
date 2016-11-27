@@ -1,0 +1,4 @@
+in the usb.dd, opened with 7zip, the last file in Users/My Documents has an alternative
+extract it, find the place in the Registry for the flag
+
+flag is: ECW{a2486aac827711258d0642176cc4f8c2}
